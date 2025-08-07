@@ -10,6 +10,7 @@ exports.markAsRead = async (req, res) => {
   res.json({ success: true });
 };
 
+// Only admins can create notifications; enforced via adminMiddleware on the route
 exports.createNotification = async (req, res) => {
   const { userId, type, message } = req.body;
   await Notification.create({ userId, type, message });
