@@ -4,7 +4,7 @@
   "description": "Ten backend to gotowe rozwiązanie do prowadzenia platformy z płatnym dostępem do treści (obrazy, wideo, pliki). System obsługuje użytkowników, kredyty, dostęp do folderów, czat, powiadomienia, CMS i więcej.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"No tests\"",
+    "test": "node --test",
     "start": "node server.js",
     "dev": "node server.js"
   },
